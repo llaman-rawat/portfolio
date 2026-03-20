@@ -2,7 +2,7 @@ import Home from "./Components/Home/Home"
 
 import About from "./Components/About/About"
 import Experience from "./Components/Experience/Experience"
-import Navbar from "./components/Navbar/Navbar"
+import Navbar from "./Components/Navbar/Navbar"
 import Project from "./Components/Projects/Project"
 import Contact from "./Components/Contact/Contact"
 

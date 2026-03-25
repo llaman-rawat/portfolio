@@ -1,6 +1,6 @@
 import React from "react";
 // import sit from "../../assets/sit.webp";
-import myPhoto from "../../assets/my photo.jpeg";
+import myPhoto from "../../assets/aman-profile.jpeg";
 
 const Home = () => {
   return (

@@ -1,5 +1,6 @@
 import React from "react";
-import sit from "../../assets/sit.webp";
+// import sit from "../../assets/sit.webp";
+import myPhoto from "../../assets/my photo.jpeg";
 
 const Home = () => {
   return (
@@ -31,7 +32,7 @@ const Home = () => {
       </div>
 
       <div className="md:w-1/2 flex justify-center mt-10">
-        <img src={sit} className="w-80 rounded-xl shadow-xl" />
+      <img src={myPhoto} alt="Aman Rawat"className="w-80 h-80 object-cover rounded-full border-4 border-white shadow-xl hover:scale-105 transition duration-300"/>
       </div>
 
     </section>

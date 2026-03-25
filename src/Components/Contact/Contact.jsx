@@ -2,73 +2,46 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
-
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_b5ji0gy",     // your service ID
-      "template_d4w6evu",     // your template ID
+      "service_b5ji0gy",
+      "template_d4w6evu",
       form.current,
-      "sXKABwyUjeSiiiLjo"        // your public key
+      "sXKABwyUjeSiiiLjo"
     )
-    .then(() => {
-      alert("Message Sent Successfully!");
-    })
-    .catch(() => {
-      alert("Failed to send message");
-    });
+    .then(() => alert("Message Sent!"))
+    .catch(() => alert("Failed"));
 
     e.target.reset();
   };
 
   return (
-    <section id="contact" className="min-h-screen bg-[#0f172a] text-white flex items-center justify-center px-6">
-      
-      <div className="max-w-xl w-full">
+    <section id="contact" className="bg-black text-white py-20 px-6">
 
-        <h2 className="text-4xl font-bold text-center mb-10">
-          Contact Me
-        </h2>
+      <h2 className="text-4xl text-center font-bold mb-12">
+        Contact Me
+      </h2>
 
-        <form ref={form} onSubmit={sendEmail} className="space-y-5">
+      <form ref={form} onSubmit={sendEmail} className="max-w-xl mx-auto space-y-4">
 
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            className="w-full p-3 bg-gray-900 border border-gray-700 rounded-md"
-          />
+        <input type="text" name="name" placeholder="Name"
+          className="w-full p-3 bg-gray-900 rounded-lg"/>
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            className="w-full p-3 bg-gray-900 border border-gray-700 rounded-md"
-          />
+        <input type="email" name="email" placeholder="Email"
+          className="w-full p-3 bg-gray-900 rounded-lg"/>
 
-          <textarea
-            name="message"
-            rows="5"
-            placeholder="Your Message"
-            required
-            className="w-full p-3 bg-gray-900 border border-gray-700 rounded-md"
-          />
+        <textarea name="message" rows="5" placeholder="Message"
+          className="w-full p-3 bg-gray-900 rounded-lg"></textarea>
 
-          <button
-            type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 p-3 rounded-md font-semibold"
-          >
-            Send Message
-          </button>
+        <button className="w-full bg-white text-black py-3 rounded-lg">
+          Send Message
+        </button>
 
-        </form>
-
-      </div>
+      </form>
     </section>
   );
 }

@@ -15,6 +15,12 @@ const Project = () => {
       description: "Modern landing UI",
       live: "https://landing-one-sable-27.vercel.app"
     },
+
+     {
+      title: "weahter APP",
+      description: "A weather app that provides real-time weather information",
+      live: "https://weather-app-zore.vercel.app"
+    },
   ];
 
   return (

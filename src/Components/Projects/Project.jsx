@@ -23,7 +23,7 @@ const Project = () => {
     },
      {
       title: "e commerce",
-      description: "A modern React-based eCommerce website with category filtering, search, cart functionality, and a smooth user shopping experience.",
+      description: "A modern React-based eCommerce website and a smooth user shopping experience.",
       live: "https://ecomm-seven-wine.vercel.app"
     },
   ];

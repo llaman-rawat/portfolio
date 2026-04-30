@@ -21,6 +21,11 @@ const Project = () => {
       description: "A weather app that provides real-time weather information",
       live: "https://weather-app-zore.vercel.app"
     },
+     {
+      title: "e commerce",
+      description: "A modern React-based eCommerce website with category filtering, search, cart functionality, and a smooth user shopping experience.",
+      live: "https://ecomm-seven-wine.vercel.app"
+    },
   ];
 
   return (
